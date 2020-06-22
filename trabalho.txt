@@ -1,0 +1,6 @@
+site pessoal:
+
+-imagem 
+-frase filosófica
+-curriculo
+-número máximo de exercícios

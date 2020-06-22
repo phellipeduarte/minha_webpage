@@ -1,0 +1,331 @@
+/** font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Serif Text', serif;
+**/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    background-size:  100vw 100vh;
+}
+
+.botao_menu_open, .botao_menu_close
+{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border: 1px solid #9AB7A7;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    margin: 1.5em;
+    text-indent: -9999px;
+    background-position: left center;
+}
+
+.botao_menu_open
+{
+    background-color: #021622;
+    background-image: url(../img/menu_hamburguer.svg);    
+}
+
+.botao_menu_close
+{
+    background-color: #021622;
+    background-image: url(../img/menu_x.svg);
+}
+
+.menu_mobile
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2;
+    transform: translateX(-100vw);
+}
+
+.menu_mobile_open
+{
+    transform: translateX(0);
+    transition: transform 500ms ease-out;
+}
+
+.menu_mobile_close
+{
+    transform: translateX(-100vw);
+    transition: transform 1s ease-in;
+}
+
+.menu_mobile li
+{
+    background-color: #030C10;
+}
+
+.botao 
+{
+    border-bottom: 0;
+    height: fit-content;
+    padding: 2.5em 0;
+
+}  
+
+.menu_mobile a
+{
+    color: #9AB7A7;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 1.5em;
+    border-bottom: 2px solid #9AB7A7;
+}
+
+.menu_pc
+{
+    background-color: #030C10;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu_pc ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.menu_pc li, .menu_mobile li
+{
+    list-style: none;
+}
+
+.menu_pc a 
+{
+    color: #9AB7A7;
+    text-decoration: none;
+    padding: 7px 80px;
+}
+
+.menu_pc a, .menu_mobile a
+{
+    display: block;
+    transition: text-shadow 1s, color 1.2s, background-color 1.2s;
+}
+
+.menu_pc a:hover,
+.menu_mobile a:active
+{
+    text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+    color: white;
+    background-color: #03181f;
+}
+
+.home
+{
+    height: 100vh;
+    background-image: url(../img/ceu_estrelado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.citacao 
+{
+    font-family: 'DM Serif Text', serif;
+    padding-top: 4em;
+    color: #9AB7A7;
+}
+.citacao h1
+{
+    width: 70vw;
+    padding-left: 3em;
+    opacity: 0;
+    text-shadow: 0px 0px 5px rgba(255,255,255,.5);
+    animation: 3s  2s AnimacaoCitacao forwards;
+}
+
+@keyframes  AnimacaoCitacao
+{
+    from
+    {
+        transform: translateY(-2vh) scale(0.9);
+        opacity: 0;
+    }
+    to 
+    {
+        transform: translateY(0vw) scale(1);
+        opacity:1;
+    }
+}
+
+@media (min-width: 300px)
+{
+    .citacao h1
+    {
+        font-size: 1.2em;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-top: 1.6em;
+    }
+    .citacao p
+    {
+        font-size: 2em;
+        padding-left: 50vw;
+        padding-top: 1.6em;
+    }
+    .menu_pc
+    {
+        display: none;;
+    }
+    .menu_mobile, .botao_menu_open
+    {
+        display: block;;
+    }
+    .titulo
+    {
+        align-self: center;
+    }
+    .leitura
+    {
+        font-size: 1.5em;
+        padding: 1em;
+        width: 90vw;
+        border: 2px solid #9AB7A7;
+    }
+    .nome
+    {
+        padding: 1em 0;
+        text-align: center;
+    }
+}
+
+@media(min-width: 340px)
+{
+    .citacao h1 
+    {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 600px)
+{
+    .citacao h1
+    {
+        font-size: 2em;
+        width: 85vw;
+    }
+    .nome
+    {
+        margin: 1em auto;
+    }
+    
+}
+
+@media (min-width: 900px)
+{
+    .citacao h1
+    {
+        font-size: 3em;
+        width: 70vw;
+    }
+    .citacao p
+    {
+        font-size: 3em;
+        padding-top: 3em;
+        padding-left: 80vw;
+    }
+    .menu_pc
+    {
+        display: block;
+    }
+    .menu_mobile, .botao_menu_open
+    {
+        display: none;
+    }
+    .leitura
+    {
+        font-size: 1em;
+        padding: 3em;
+        border: 2px solid;
+        max-width: 800px;
+        line-height: 1.4em;
+    }
+    .titulo
+    {
+        align-self: flex-start ;
+    }
+}
+
+.sobre, .links, .contato
+{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #9AB7A7;
+}
+
+.sobre
+{
+    background-image: linear-gradient(#021622, #020B0F);
+}
+
+.links
+{
+    background-image: linear-gradient(#020B0F, #021622);
+    height: 100vh;
+}
+
+.titulo
+{
+    padding: 1.5em;
+}
+
+.subtitulo
+{
+    font-size: 1.2em;
+}
+
+.leitura
+{
+    color:#05274C;
+    height: fit-content;
+    margin: 3em auto;
+    border: 3px solid #9AB7A7;
+    background-color: whitesmoke;
+}
+
+.minha_foto
+{
+    margin-left: auto;
+    margin-right: auto;
+    clip-path: circle(41.6% at 50% 50%);
+}
+
+.minha_foto img
+{
+    height: 400px;
+    width: 300px;
+}
+
+.nome
+{
+    font-size: 4em;
+    font-family: 'DM Serif Text', serif;
+}
+
+.nome_animado
+{
+
+}
+
