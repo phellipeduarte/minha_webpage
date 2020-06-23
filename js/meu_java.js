@@ -33,3 +33,50 @@ botao_close.addEventListener("click", function()
 	menu.classList.remove("menu_mobile_open")
 	menu.classList.add("menu_mobile_close")
 })
+
+$(document).ready(function(){
+	$("#button_1").on("click", function(){
+		$("#display_1").toggle();
+	})
+})
+
+$(document).ready(function(){
+	$("#button_2").on("click", function(){
+		$("#display_2").toggle();
+	})
+})
+
+
+/**
+ * animacao do scrool
+	(function()
+         {
+	var $target = $('.legenda'),
+			animationClass = 'anime-start';
+
+    function animeScroll() 
+    {
+		var documentTop = $(document).scrollTop();
+
+        $target.each(function()
+        {
+			var itemTop = $(this).offset().top;
+            if (documentTop > itemTop - 600) 
+            {
+				$(this).addClass(animationClass);
+            } else 
+            {
+				$(this).removeClass(animationClass);
+			}
+		});
+    }
+    
+
+
+	animeScroll();
+
+	$(document).scroll(debounce(function(){
+		animeScroll();
+	}, 200));
+})();
+ */
