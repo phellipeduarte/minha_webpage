@@ -1,0 +1,37 @@
+table
+{
+    background-color: #C7E7F3 ;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    width: 600px;
+}
+th
+{
+    background-color: #66C5E3;
+}
+
+caption
+{
+    background-color: #0D5188;
+    color: white;
+    font-weight: bold;
+}
+
+.cidade
+{
+    color: #0D5188;
+    font-weight: bold;
+}
+
+.posicao
+{
+    background-color: silver;
+    text-align: center;
+    width: 10%;
+}
+
+.populacao
+{
+    text-align: center;
+    width: 15%;
+}

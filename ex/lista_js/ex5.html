@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function verificar_maior()
+            {
+                var n1 = document.getElementById("n1").value;
+                var n2 = document.getElementById("n2").value;
+                if (n1 > n2)
+                {
+                    alert("O primeiro número é maior que o segundo!");
+                }
+                else if (n2 > n1)
+                {
+                    alert("O segundo número é maior que o primeiro");
+                }
+                else
+                {
+                    alert("Os números são iguais");
+                }
+            }
+            
+        </script>
+        <header>
+            <p> Escreva dois números quaisquer </p>
+            <br>
+            <input id="n1" type="number">
+            <br>
+            <input id="n2" type="number">
+            <br>
+            <br>
+            <button onclick="verificar_maior()"> Ok! </button> 
+            <p id="resposta"></p>
+        </header>   
+        
+    </body>
+</html>

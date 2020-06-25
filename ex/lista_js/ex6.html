@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function calcular_temperatura()
+            {
+                var temp_f = document.getElementById("temp").value;
+                var temp_c = 5/9 * (temp_f - 32)
+                var resultado = "A temperatura em graus Celsius é " + temp_c + " °C"
+                document.getElementById("resposta").innerHTML = resultado
+            }
+            
+        </script>
+        <header>
+            <p> Escreva uma temperatura em graus Fahrenheit </p>
+            <br>
+            <input id="temp" type="number">
+            <br>
+            <button onclick="calcular_temperatura()"> Ok! </button> 
+            <br>
+            <p id="resposta"></p>
+        </header>   
+        
+    </body>
+</html>

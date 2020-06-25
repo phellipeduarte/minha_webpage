@@ -22,6 +22,7 @@ const botao_close = document.querySelector(".botao_menu_close")
 const menu = document.querySelector(".menu_mobile")
 
 
+
 botao_open.addEventListener("click", function()
 {
 	menu.classList.remove("menu_mobile_close")
@@ -45,38 +46,3 @@ $(document).ready(function(){
 		$("#display_2").toggle();
 	})
 })
-
-
-/**
- * animacao do scrool
-	(function()
-         {
-	var $target = $('.legenda'),
-			animationClass = 'anime-start';
-
-    function animeScroll() 
-    {
-		var documentTop = $(document).scrollTop();
-
-        $target.each(function()
-        {
-			var itemTop = $(this).offset().top;
-            if (documentTop > itemTop - 600) 
-            {
-				$(this).addClass(animationClass);
-            } else 
-            {
-				$(this).removeClass(animationClass);
-			}
-		});
-    }
-    
-
-
-	animeScroll();
-
-	$(document).scroll(debounce(function(){
-		animeScroll();
-	}, 200));
-})();
- */

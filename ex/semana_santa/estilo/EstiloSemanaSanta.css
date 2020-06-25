@@ -1,0 +1,186 @@
+
+*
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+h1
+{
+	font-family:  "Trebuchet MS", Helvetica, sans-serif;
+}
+h2
+{ 
+	font-family:  "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 25px
+}
+body
+{
+	background-color:#F5DEB3 
+
+}
+#topo
+{	
+	font-size: 25px;
+	width: 100% ;
+	height: 200px ;
+	background: #DEB887 ;
+	text-align: center ;
+	
+}
+#inicio
+{
+	width: 80%;
+	font-size: 15px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 25px;
+	border: 1px solid #F5DEB3 ;
+	height: 1px;
+	
+}
+#dia1
+{
+
+	width: 80%;
+	height: 300 px;
+	background: #B0E0E6 ;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 70px;
+	padding: 25px;
+	border: 5px solid #5F9EA0 ;
+	box-sizing: border-box;
+
+
+}
+#dia2
+{
+
+	width: 80%;
+	height: 300 px;
+	background: #D8BFD8 ;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 70px;
+	padding: 25px;
+	border: 5px solid #8A2BE2 ;
+	box-sizing: border-box;
+
+
+}
+#dia3
+{
+
+	width: 80%;
+	height: 300 px;
+	background: #DAA9A9 ;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 70px;
+	padding: 25px;
+	border: 5px solid #8B0000 ;
+	box-sizing: border-box;
+
+
+}
+#dia4
+{
+
+	width: 80%;
+	height: 300 px;
+	background: #EEE8AA ;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 70px;
+	padding: 25px;
+	border: 5px solid #DAA520 ;
+	box-sizing: border-box;
+
+
+}
+#dia5
+{
+
+	width: 80%;
+	height: 300 px;
+	background: #D8BFD8 ;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 70px;
+	padding: 25px;
+	border: 5px solid #8A2BE2  ;
+	box-sizing: border-box;
+
+
+}
+#dia6
+{
+
+	width: 80%;
+	height: 300 px;
+	background: #DAA9A9 ;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 70px;
+	padding: 25px;
+	border: 5px solid #8B0000 ;
+	box-sizing: border-box;
+
+
+}
+#dia7
+{
+
+	width: 80%;
+	height: 300 px;
+	background: #767BA6 ;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 70px;
+	padding: 25px;
+	border: 5px solid #4D588E ;
+	box-sizing: border-box;
+
+
+}
+#dia8
+{
+
+	width: 80%;
+	height: 300 px;
+	background: #B0E0E6 ;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 70px;
+	padding: 25px;
+	border: 5px solid #5F9EA0 ;
+	box-sizing: border-box;
+
+
+}
+.p_1
+{
+	font-size: 20px;
+	font-family:  "Trebuchet MS", Helvetica, sans-serif;
+}
+#foto
+{
+	margin-top: 50px;
+	margin-left: 600px;
+	margin-right: 600px;
+	margin-bottom: 50px;
+}
+#fundo
+{	
+	font-size: 25px;
+	width: 100% ;
+	height: 200px ;
+	background: #F5DEB3 ;
+	text-align: center ;
+	margin-top: 70px;
+		
+	
+	

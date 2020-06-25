@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+    var a=1;
+    function mostrar_tabuada()
+    { 
+        var b = document.getElementById("numero").value; 
+        for(cont=0; cont<10; cont++)
+        { 
+            for(conta=0; conta<=10;conta++)
+            { 
+                var result=a*b; 
+                if(conta==10)
+                { 
+                    document.write(b+"x"+a+"="+result); 
+                    document.write("<br>"); a++; 
+                } 
+            } 
+        } 
+    }
+            
+        </script>
+        <header>
+            <p> Escreva um número a fim de consultar sua tabuada </p>
+            <br>
+            <input id="numero" type="number">
+            <br>
+            <button onclick="mostrar_tabuada()"> Ok! </button> 
+            <br>
+        </header>   
+        
+    </body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+<html>
+	<head>
+	<title> Formulário Exercício </title>
+	</head>
+	<body>
+		<h1><strong>Cadastro de Clientes</strong></h1>
+		<form method="POST">
+		
+			<fieldset>
+				<legend><b>Dados Pessoais</b> </legend>
+					<img src="img/user.png"  align="left" align="midle" width="200" height="200">
+					Nome: <input type="text" maxlength="40"></input>
+					<br>
+					<br>
+					Data de Nascimento: <input type="date"></input>
+					<br>
+					<br>
+					Sexo:
+					<input type="radio" name="sexo" value="naoInformar" checked ></input> Não informar 
+					<input type="radio" name="sexo" value="feminino" ></input> Feminino
+					<input type="radio" name="sexo" value="masculino"  ></input> Masculino 
+					<input type="radio" name="sexo" value="nenhumaAnterior"  ></input> Nenhuma das anteriores 
+					<br>
+					<br>
+					Formação:
+					<select name="Formação">
+					
+						<option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto
+						<option value="Ensino Fundamental Completo">Ensino Fundamental Completo
+						<option value="Ensino Médio Incompleto">Ensino Médio Incompleto
+						<option value="Ensino Médio Completo">Ensino Médio Completo
+						<option value="Ensino Superior Incompleto">Ensino Superior Incompleto
+						<option value="Ensino Superior Completo">Ensino Superior Completo
+						
+					</select>
+					Profissão: 
+					<select name="Profissão">
+						<option value="Administração"> Administração
+						<option value="Agronomia"> Agronomia
+						<option value="Arqueologia"> Arqueologia
+						<option value="Arquitetura"> Arquitetura
+						<option value="Astronomia"> Astronomia
+						<option value="Biologia"> Biologia
+						<option value="Cinema"> Cinema
+						<option value="Design"> Designer
+						<option value="Economia"> Economia
+						<option value="Educação"> Educação
+						<option value="Engenharia"> Engenharia
+						<option value="Enfermagem"> Enfermagem
+						<option value="Farmácia"> Farmácia
+						<option value="Fisioterapia"> Fisioterapia
+						<option value="Filosofia"> Filosofia
+						<option value="Fotografia"> Fotografia
+						<option value="Geografia"> Geografia
+						<option value="Jornalismo"> Jornalismo
+						<option value="Matemática"> Matemática
+						<option value="Medicina"> Medicina
+						<option value="Odontologia"> Odontologia
+						<option value="Psicologia"> Psicologia
+						<option value="Química"> Química
+					</select>
+					<br>
+					<br>
+					CPF: <input type="number" maxlength="12" placeholder="12 Dígitos">
+						
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend><b>Contato</b></legend>
+					<img src="img/paper-plane.png"  align="left" align="midle" width="150" height="150">
+					
+					Email: <input type="text"></input>
+					<br>
+					<br>
+					Celular: <input type="tel"></input>
+					<br>
+					<br>
+					Skype: <input type="text"></input>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend><b>Endereço</b></legend>
+					<img src="img/home.png"  align="left" align="midle" width="180" height="180">
+					Logradouro: <input type="text" maxlength="40"></input>
+					<br>
+					<br>
+					Número: <input type="number" maxlength="4"></input> CEP: <input type="number" maxlength="8"></input>
+					<br>
+					<br>
+					Bairro: <input type="text" maxlength="15"></input> Cidade: <input type="text" maxlength="20"></input>
+					<br>
+					<br>
+					Cidade:
+					<select name="Cidade">
+						<option value="AC">AC
+						<option value="AL">AL
+						<option value="AP">AP
+						<option value="AM">AM
+						<option value="BA">BA
+						<option value="CE">CE
+						<option value="DF">DF
+						<option value="ES">ES
+						<option value="GO">GO
+						<option value="MA">MA
+						<option value="MG">MG
+						<option value="MT">MT
+						<option value="MS">MS
+						<option value="PA">PA
+						<option value="PB">PB
+						<option value="PR">PR
+						<option value="PE">PE
+						<option value="PI">PI
+						<option value="RJ">RJ
+						<option value="RN">RN
+						<option value="RO">RO
+						<option value="RS">RS
+						<option value="SC">SC
+						<option value="SP">SP
+						<option value="SE">SE
+						<option value="TO">TO
+					</select>
+					<br>
+					<br>
+					<p>Complemento: <input type="text"></input>
+			</fieldset>
+			<br>
+			<center>
+					<input type="submit" value="Salvar Cliente" >
+					<input type="reset" value="Limpar Dados" >
+			</center>
+			
+		</form>
+	</body>
+</html> 
