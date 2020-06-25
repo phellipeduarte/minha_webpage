@@ -225,6 +225,10 @@ body
     {
         height: fit-content;
     }
+    .contato
+    {
+        height: fit-content;
+    }
     .contatos
     {
         min-width: fit-content;
@@ -310,6 +314,10 @@ body
     {
         width: 40vw;
     }
+    .contato
+    {
+        height: 100vh;
+    }
     .contatos a
     {
         max-width: 40vw;
@@ -320,7 +328,7 @@ body
     }
 }
 
-.sobre, .contato
+.sobre
 {
     height: fit-content;
 }
