@@ -46,3 +46,9 @@ $(document).ready(function(){
 		$("#display_2").toggle();
 	})
 })
+
+$(document).ready(function(){
+	$("#button_3").on("click", function(){
+		$("#display_3").toggle();
+	})
+})
